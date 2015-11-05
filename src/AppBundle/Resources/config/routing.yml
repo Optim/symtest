@@ -1,0 +1,16 @@
+app_listreason:
+    resource: "@AppBundle/Resources/config/routing/listreason.yml"
+    prefix:   /listreason
+    options:
+        expose: true
+app_bundle_homepage:
+    path:     /form
+    defaults: { _controller: AppBundle:Default:form }
+    options:
+        expose: true
+
+app_bundle_hello:
+    path: /
+    defaults: { _controller: AppBundle:Default:index }
+    options:
+        expose: true

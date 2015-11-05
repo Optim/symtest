@@ -1,0 +1,30 @@
+listreason:
+    path:     /
+    defaults: { _controller: "AppBundle:ListReason:index" }
+
+listreason_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBundle:ListReason:show" }
+
+listreason_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:ListReason:new" }
+
+listreason_create:
+    path:     /create
+    defaults: { _controller: "AppBundle:ListReason:create" }
+    methods:  POST
+
+listreason_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBundle:ListReason:edit" }
+
+listreason_update:
+    path:     /{id}/update
+    defaults: { _controller: "AppBundle:ListReason:update" }
+    methods:  [POST, PUT]
+
+listreason_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBundle:ListReason:delete" }
+    methods:  [POST, DELETE]

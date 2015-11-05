@@ -1,0 +1,51 @@
+{% extends '@App/ab.base.html.twig' %}
+{% trans_default_domain 'modify' %}
+{% block body -%}
+
+    <h1 style="clear: left">ListReason list</h1>
+    <span>Count is {{ pagination.getTotalItemCount }}</span>
+    <table class="records_list" style="width: 50%">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Namereason</th>
+                <th>Isuserreason</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            {# sorting of properties based on query components #}
+            <th>{{ knp_pagination_sortable(pagination, 'reason.id'|trans, 'a.id') }}</th>
+            <th{% if pagination.isSorted('a.nameReason') %} class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'reason.name'|trans, 'a.nameReason')|raw }}</th>
+            <th>{{ knp_pagination_sortable(pagination, 'reason.isUserReason'|trans, 'a.isUserReason') }}</th>
+            <th></th>
+        </tr>
+        {% for entity in pagination %}
+            <tr>
+                <td><a href="{{ path('listreason_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.nameReason }}</td>
+                <td>{{ entity.isUserReason }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('listreason_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('listreason_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {{ knp_pagination_render(pagination)|raw }}
+        <ul>
+        <li>
+            <a href="{{ path('listreason_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

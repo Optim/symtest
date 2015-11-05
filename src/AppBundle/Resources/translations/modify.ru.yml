@@ -1,0 +1,6 @@
+reason:
+    name: Название причины
+    id: ID
+    isUserReason: Идентификатор пренадлежности
+Create: Создать
+#reason.name2: One

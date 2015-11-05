@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            {% stylesheets
+                'bundles/app/css/bootstrap.min.css'
+            %}
+            <link href="{{ asset_url }}" media="screen" rel="stylesheet" type="text/css" />
+            {% endstylesheets %}
+        {% endblock %}
+        {% block headjavascripts %}
+            {% javascripts
+                'assets/vendor/jquery/dist/jquery.min.js'
+                'bundles/fosjsrouting/js/router.js'
+            %}
+            <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+            <script src="{{ path('fos_js_routing_js', {'callback': 'fos.Router.setData'}) }}"></script>
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <header>
+            {{ include('::header.html.twig') }}
+        </header>
+        <nav></nav>
+        <div class="content container">
+            {% block body %}
+            {% endblock %}
+        </div>
+        <main>
+        </main>
+        <aside></aside>
+        <footer></footer>
+
+        {% block javascripts %}
+            {% javascripts
+                'assets/vendor/bootstrap/dist/js/bootstrap.js'
+            %}
+                <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
+    </body>
+</html>

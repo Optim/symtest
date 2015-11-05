@@ -1,0 +1,401 @@
+
+.pointer {
+    cursor: pointer !important
+}
+
+.proj {
+    padding: 0 0 10px 20px;
+    border-bottom: 2px #ebebeb dashed
+}
+
+ul.proj li {
+    list-style: none
+}
+
+ul.proj .toogleshow {
+    display: none
+}
+
+ul.email-report li div.toogleshow {
+    display: block
+}
+
+.proj-padding {
+    padding: 10px 0 12px 0
+}
+
+.logoj {
+    color: #0b4b7d;
+    font-weight: bold
+}
+
+.logos {
+    color: #fff;
+    font-weight: bold
+}
+
+.content {
+    margin-bottom: 30px;
+    padding: 60px 20px 20px 20px;
+    background: #fefefe;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0 0 14px 0 rgba(50, 50, 50, 0.56);
+    -moz-box-shadow: 0 0 14px 0 rgba(50, 50, 50, 0.56);
+    box-shadow: 0 0 14px 0 rgba(50, 50, 50, 0.56);
+    transition-duration: .3s
+}
+
+.content-project {
+    margin-top: 60px
+}
+
+.totaltime {
+    font-size: 1em
+}
+
+.label span {
+    font-weight: normal !important
+}
+
+.userclass {
+    color: #333;
+    font-size: 1.2em
+}
+
+.projectb {
+    color: #006c8f
+}
+
+.proj li:nth-child(odd) {
+    background-color: #f5f6f7
+}
+
+.table-striped > tbody > tr:nth-child(even) {
+    background-color: #fff
+}
+
+#back-top a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999999999;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center
+}
+
+#back-top a:hover {
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+#back-top a i {
+    font-size: 2em
+}
+
+.label-primary {
+    background-color: #0099da
+}
+
+.label-success {
+    background-color: #02c66c
+}
+
+.label-warning {
+    background-color: #f0ad4e
+}
+
+.label-danger {
+    background-color: #d9534f
+}
+
+.label-info {
+    background-color: #54c8eb
+}
+
+.label-royal {
+    background-color: #ac60d0
+}
+
+.rowmargin {
+    margin-bottom: 10px
+}
+
+input, textarea {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+.input-daterange input.form-control {
+    cursor: pointer
+}
+
+.usersel {
+    position: relative;
+    left: 10px;
+    font-size: 1.2em
+}
+
+.pkey {
+    padding-left: 25px
+}
+
+table.table tr th {
+    vertical-align: inherit;
+    padding: 6px 8px
+}
+
+.cuter-text {
+    cursor: pointer;
+    overflow: hidden;
+    max-width: 280px;
+    white-space: nowrap
+}
+
+.section-title:first-letter {
+    color: #008cba
+}
+
+@media (max-width: 1200px) {
+    .cuter-text {
+        max-width: 180px
+    }
+
+    div[class^="col-md-"] {
+        padding: 5px 10px
+    }
+}
+
+@media (max-width: 767px) {
+    #back-top a {
+        position: fixed;
+        bottom: 10px;
+        right: 10px
+    }
+
+    #back-top a i {
+        font-size: 1.6em
+    }
+}
+
+@media (min-width: 767px) {
+    .caret-right {
+        width: 0;
+        height: 0;
+        border-top: 4px solid rgba(0, 0, 0, 0);
+        border-bottom: 4px solid rgba(0, 0, 0, 0);
+        border-left: 4px solid #777
+    }
+}
+
+.dropdown-menu li {
+    background: #fafafa
+}
+
+.dropdown-menu li:hover, .dropdown-menu li a:hover, .dropdown-menu li.active a {
+    background: #ebebeb !important
+}
+
+.dropdown-menu li a {
+    color: #333 !important
+}
+
+.dropdown-submenu {
+    position: relative
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block
+}
+
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    margin-top: 5px;
+    margin-right: -10px
+}
+
+.dropdown-submenu:hover > a:after {
+    border-left-color: #fff
+}
+
+.dropdown-submenu.pull-left {
+    float: none
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px
+}
+
+nav {
+    -webkit-box-shadow: 0 0 14px 0 rgba(50, 50, 50, 0.56);
+    -moz-box-shadow: 0 0 14px 0 rgba(50, 50, 50, 0.56);
+    box-shadow: 0 0 14px 0 rgba(50, 50, 50, 0.56)
+}
+
+.hidden-result {
+    display: none
+}
+
+.project_expand {
+    width: 1400px
+}
+
+.bootstrap-select {
+    width: 220px !important
+}
+
+.open .selectpicker {
+    overflow-x: hidden
+}
+
+.table tbody > tr > td.vert-align {
+    vertical-align: middle
+}
+
+#user-tables tr.active td {
+    background: #ebf1f4
+}
+
+#user-tables tr.warning td {
+    background: #fcf8e3 !important
+}
+
+#user-tables tr.processing td {
+    background: #f4f9eb !important
+}
+
+.form-control[readonly] {
+    background: #fff
+}
+
+.options-nav .form-control {
+    height: 28px;
+    font-size: 12px !important
+}
+
+.options-nav .input-group-addon {
+    padding: 2px 5px !important;
+    height: 28px
+}
+
+.header-nav {
+    background: #ebebeb;
+    padding: 10px 0;
+    margin: 0 -21px;
+    margin-bottom: 10px
+}
+
+.header-nav .bootstrap-select .dropdown-toggle {
+    padding: 3px 12px
+}
+
+.fix-avance {
+    height: 22px;
+    font-size: 11px !important;
+    border: 1px dotted #aaa
+}
+
+.avanceclass {
+    display: none
+}
+
+.row2 {
+    background: #ebebeb
+}
+
+.modal-body .btn {
+    margin: 3px 0
+}
+
+.modal-body .btn.remove-item {
+    margin: 0 0 0 -1px
+}
+
+.linkfile {
+    line-height: 30px
+}
+
+.changes {
+    color: #ea2f10
+}
+
+* html .row-form {
+    height: 1%;
+    overflow: visible
+}
+
+* + html .row-form {
+    min-height: 1%
+}
+
+.row-form:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    font-size: 0
+}
+
+.row-form {
+    border: 1px solid #DDD;
+    border-top-color: #FFF;
+    padding: 10px 5px;
+    vertical-align: baseline;
+    border-width: 1px 0
+}
+
+.row-form:first-child {
+    border-top-color: #DDD;
+    margin-top: 10px
+}
+
+.row-form:last-child {
+    border-width: 0;
+    margin-top: 10px
+}
+
+.row-form > [class^="col-md-"] {
+    color: #333;
+    text-shadow: 1px 1px 1px #FFF;
+    line-height: 30px
+}
+
+b.hidden-md {
+    font-weight: normal
+}
+
+.statisticbody .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+    top: 9px
+}
+
+.btn-group .btn ~ .dropdown-toggle {
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.reset-password input {
+    height: 30px
+}

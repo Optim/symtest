@@ -4,7 +4,7 @@ namespace AppBundle\Menu;
 
 use Knp\Menu\FactoryInterface;
 use Symfony\Component\Security\Core\SecurityContext;
-
+use Knp\Menu\ItemInterface;
 class Builder
 {
     private $factory;
@@ -26,12 +26,13 @@ class Builder
     }
 
     /**
-     * @param                  $menu
+     * @param ItemInterface    $menu
      * @param array            $nav
      * @param SecurityContext  $security
      */
-    private function menuCreator(&$menu, array $nav, SecurityContext &$security, $level=0)
+    private function menuCreator(ItemInterface &$menu, array $nav, SecurityContext &$security, $level=0)
     {
+
         foreach ($nav as $route => $options) {
             $options = $this->defaultOptions($options);
             if(!empty($options['role'])) {
@@ -62,29 +63,29 @@ class Builder
      *
      * @return \Knp\Menu\ItemInterface
      */
-    public function mainMenu(SecurityContext $security, \FirePHP $firePHP)
+    public function mainMenu(SecurityContext $security)
     {
         $menu = $this->factory->createItem('root', [
             'subnavbar' => true,
         ]);
+
         $menu->setChildrenAttributes([
             'class' => 'nav navbar-nav navbar-left',
         ]);
+
 
         $nav = [
             '#modify' => [
                 'name' => 'Modify',
                 'child' => [
                     '#list-reasons' => [
-                        'name' => 'Reason',
-                        'role' => 'ROLE_ADMIN',
+                        'name' => 'Reasons',
                         'child' => [
                             'listreason_new' => [
                                 'name' => 'new listreason',
                             ],
                             'listreason' => [
                                 'name' => 'listreasons',
-                                'role' => 'ROLE_ADMIN',
                             ],
                         ],
                     ],
@@ -97,7 +98,7 @@ class Builder
                 'name' => 'About me'
             ],
         ];
-        $firePHP->info($nav);
+
         $this->menuCreator($menu, $nav, $security);
 
         return $menu;

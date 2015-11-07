@@ -34,7 +34,6 @@ class Builder
     {
     /**
      * @var  $route
-     * @var  $options
      */
         foreach ($nav as $route => $options) {
             $options = $this->defaultOptions($options);

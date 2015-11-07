@@ -61,6 +61,7 @@ class Builder
     /**
      * @param SecurityContext $security
      *
+     *
      * @return \Knp\Menu\ItemInterface
      */
     public function mainMenu(SecurityContext $security)

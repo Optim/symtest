@@ -7,7 +7,7 @@ app_bundle_homepage:
     path:     /form
     defaults: { _controller: AppBundle:Default:form }
     options:
-        expose: true
+        expose: false
 
 app_bundle_hello:
     path: /

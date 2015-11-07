@@ -68,7 +68,6 @@ class Builder
         $menu = $this->factory->createItem('root', [
             'subnavbar' => true,
         ]);
-
         $menu->setChildrenAttributes([
             'class' => 'nav navbar-nav navbar-left',
         ]);

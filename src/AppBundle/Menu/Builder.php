@@ -40,7 +40,7 @@ class Builder
             } else
 
                 $check = true;
-            /** bool $check */
+            /** bool_php $check */
             if ($check) {
                 $route = $route[0]!='#' ? ['route' => $route]
                                         : [];

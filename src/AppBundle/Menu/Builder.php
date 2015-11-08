@@ -41,7 +41,9 @@ class Builder
                 $check = $options['isGrantedType'] ? $security->isGranted($options['role'])
                     : !$security->isGranted($options['role']);
             } else
+
                 $check = true;
+            /** bool $check */
             if ($check) {
                 $route = $route[0]!='#' ? ['route' => $route]
                                         : [];

@@ -32,9 +32,6 @@ class Builder
      */
     private function menuCreator(ItemInterface &$menu, array $nav, SecurityContext &$security, $level=0)
     {
-    /**
-     * @var  $route
-     */
         foreach ($nav as $route => $options) {
             $options = $this->defaultOptions($options);
             if(!empty($options['role'])) {
